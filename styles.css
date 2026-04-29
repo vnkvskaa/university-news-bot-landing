@@ -909,6 +909,22 @@ mark {
   background: linear-gradient(90deg, var(--violet), var(--lavender));
 }
 
+.before-after .metric-good i {
+  background: linear-gradient(90deg, #22c55e, #86efac);
+}
+
+.before-after .metric-bad i {
+  background: linear-gradient(90deg, #ef4444, #fca5a5);
+}
+
+.before-after .metric-good b {
+  color: #166534;
+}
+
+.before-after .metric-bad b {
+  color: #b91c1c;
+}
+
 .tile-header strong {
   font-size: 18px;
 }
