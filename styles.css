@@ -246,6 +246,15 @@ mark {
   margin: -22px 0 26px;
 }
 
+.hero-stats .section-heading {
+  grid-column: 1 / -1;
+  margin-bottom: 8px;
+}
+
+.hero-stats .section-heading .eyebrow {
+  margin-bottom: 0;
+}
+
 .hero-stats article {
   display: block;
   min-height: 150px;
