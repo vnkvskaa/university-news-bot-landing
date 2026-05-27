@@ -596,9 +596,39 @@ mark {
 }
 
 .solution-layout {
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 390px);
-  align-items: stretch;
-  gap: 20px;
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 390px);
+  align-items: start;
+  gap: 28px;
+}
+
+.content-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 14px;
+}
+
+.content-chips span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid rgba(139, 92, 246, 0.08);
+  border-radius: 999px;
+  background: rgba(238, 231, 255, 0.82);
+  color: var(--violet-dark);
+  font-size: 14px;
+  font-weight: 760;
+}
+
+.journey-title {
+  grid-column: 1 / -1;
+  margin-bottom: -4px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .flow-card {
@@ -661,6 +691,7 @@ mark {
 .user-journey {
   position: relative;
   display: grid;
+  min-width: 0;
   gap: 0;
   padding: 26px 28px;
   border: 1px solid rgba(31, 33, 31, 0.08);
@@ -886,6 +917,27 @@ mark {
   line-height: 1.4;
 }
 
+.page-footer {
+  padding: 0 0 56px;
+}
+
+.footer-line {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto 16px;
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.footer-accent {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  height: 20px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(139, 92, 246, 0.18), rgba(139, 92, 246, 0.02));
+}
+
 .metrics-compare {
   display: grid;
   grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.15fr);
@@ -1005,8 +1057,11 @@ mark {
 
 .phone-demo {
   display: flex;
+  align-self: start;
   justify-content: center;
   padding: 0;
+  position: sticky;
+  top: 120px;
 }
 
 .phone {
@@ -1520,6 +1575,10 @@ li + li {
     position: static;
   }
 
+  .phone-demo {
+    position: static;
+  }
+
   .bento-grid,
   .scale-cards,
   .comparison-grid,
@@ -1615,6 +1674,10 @@ li + li {
 
   .tile.large {
     min-height: 360px;
+  }
+
+  .content-chips span {
+    font-size: 13px;
   }
 
   .signal-card strong {
