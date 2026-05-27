@@ -1078,6 +1078,22 @@ mark {
   font-weight: 750;
 }
 
+.content-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.content-chips span {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--violet-soft);
+  color: var(--violet-dark);
+  font-size: 13px;
+  font-weight: 700;
+}
+
 .message-card {
   background: #fff;
 }
