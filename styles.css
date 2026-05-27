@@ -649,6 +649,15 @@ mark {
   color: var(--text);
 }
 
+.journey-title {
+  margin: 0 0 16px;
+  font-size: 14px;
+  font-weight: 850;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 .user-journey {
   position: relative;
   display: grid;
